@@ -1,10 +1,16 @@
 .view_main{
     min-height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .view_top{
     color: rgb(240, 255, 255 );
     font-size: xx-large;
+}
+
+.form_container{
+    width:500px;
 }
 
 .view_middle{

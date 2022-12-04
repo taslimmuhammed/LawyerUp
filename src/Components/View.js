@@ -8,6 +8,7 @@ import { SearchContext } from '../Context/SearchContext';
 import { EthersContext } from '../Context/EthersContext';
 import { Web3Storage } from "web3.storage";
 import Loader from "../Components/Loader";
+import Form2 from "../Components/Form2";
 
 function View() {
     
@@ -67,7 +68,7 @@ function View() {
     return (
         <div>
 
-            <div className='gradient-bg-welcome flex w-full min-h-screen justify-center items-center'>
+            <div className='gradient-bg-welcome flex w-full min-h-screen justify-center items-center flex-col'>
                 {/* <Navbar></Navbar> */}
                 <div className='view_main '>
                     <div className='view_top'>
@@ -119,11 +120,16 @@ function View() {
                                  
                               </Row>
 
+
                         </div>
 
                     </div>
                 </div>
                 <div>
+                </div>
+                <div className="form_container">
+
+                <Form2></Form2>
                 </div>
             </div>
         </div>
