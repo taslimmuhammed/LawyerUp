@@ -8,3 +8,6 @@
     display: flex;
     overflow-wrap: break-word;
 }
+.form_container{
+    width:500px;
+}

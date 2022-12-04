@@ -20,7 +20,10 @@ const MarketPlace = () => {
             <div className="productDetails_container">
             <div className="fullDetails">
                 <PatentCardfull name={data[0].name} licensee={data[0].licensee} inventor={data[0].inventor} timestamp={data[0].timestamp} price={data[0].price} description={data[0].description}></PatentCardfull>
+                <div className="form_container">
                 <Form/>
+
+                </div>
             
             </div>
             </div>
