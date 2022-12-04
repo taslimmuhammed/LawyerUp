@@ -9,8 +9,8 @@ import ViewPage from './Pages/ViewPage';
 import Transfer from './Components/Transfer';
 import MyWorks from './Components/MyWorks';
 import Market from './Components/Market';
-import MarketPlace from './Pages/marketPlace';
-
+import MarketPlace from './Pages/MarketPlace';
+import ProductDetails from './Pages/ProductDetails'
 
 function App() {
   const {Blocks, setBlocks}= useContext(EthersContext)
@@ -35,6 +35,8 @@ function App() {
           <Route path='/transfer'  element={<Transfer/>}></Route>
           <Route path='/myworks'  element={<MyWorks/>}></Route>
           <Route path='/MarketPlace'  element={<MarketPlace/>}></Route>
+          <Route path='/ProductDetails'  element={<ProductDetails/>}></Route>
+          
           <Route path='/market'  element={<Market/>}></Route>
         </Routes>
       </Router>

@@ -3,17 +3,20 @@
 .card_body {
 
     width: 350px;
-    height: 200px;
+    height: 300px;
     padding-left: 50px;
     border-radius: 15px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* background: linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%); */
     font-size: 3vw;
-	margin: max(1rem, 3vw);
-	padding: 3vw;
+	/* margin: max(1rem, 3vw);
+	padding: 3vw; */
 
     
+}
+.card_text {
+    overflow-wrap: break-word;
 }
 
 .card_body p{
@@ -34,6 +37,7 @@
 .product_licensee{
     font-size: small;
 }
+
 @property --angle {
     syntax: '<angle>';
     initial-value: 90deg;
@@ -134,6 +138,7 @@
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #FFFFFF;
+    display: flex;
     font-family: Phantomsans, sans-serif;
     font-size: 20px;
     padding-left: 2rem;
