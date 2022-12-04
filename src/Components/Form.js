@@ -11,14 +11,7 @@ const Form = () => {
 
     const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
     const inputStyle = "my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
-    const [Name, setName] = useState(null)
-    const [Files, setFiles] = useState(null)
-    const [Description, setDescription] = useState(null)
-    const [Type, setType] = useState("patent")
-    const [isLoading, setIsLoading] = useState(false)
-    const [Creator, setCreator] = useState(null)
-    const [cat,setCat] = useState(null);
-    const [ipid,setIpid] = useState(null);
+    const [dur, setdur] = useState(null);
 
     const handleSubmit =async () => {
         console.log("hello");
@@ -44,7 +37,7 @@ const Form = () => {
                     </TextField> */}
 
                     <div className="text-white w-full text-sm mt-3">Enter the duration  </div>
-                    <input placeholder="in days" className={inputStyle} type="text" onChange={(e) => { setName(e.target.value) }} />
+                    <input placeholder="in days" className={inputStyle} type="text" onChange={(e) => { setdur(e.target.value) }} />
 
                     <div className="h-[1px] w-full bg-gray-400 my-2" />
                     {isLoading
